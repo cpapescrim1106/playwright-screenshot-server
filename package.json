@@ -1,16 +1,20 @@
 {
-  "name": "playwright-server",
+  "name": "playwright-screenshot-server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "playwright_screenshot_server.js",
+  "description": "A Playwright-based screenshot service designed for Claude Code integration",
   "scripts": {
+    "start": "node playwright_screenshot_server.js",
+    "dev": "node --watch playwright_screenshot_server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["playwright", "screenshot", "claude-code", "web-automation"],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^5.1.0",
+    "express-rate-limit": "^7.1.5",
     "playwright": "^1.53.1"
   }
 }
